@@ -231,10 +231,9 @@ exec feh --bg-scale ~/Assets/169654.jpg
 
 # Gaps
 #
-# Yet to be finalized.
-#gaps inner 0
-#gaps outer 0
-#gaps border 10
+smart_gaps on
+smart_borders on
+gaps inner 20
 
 # Adjust monitor arrangement.
 #
