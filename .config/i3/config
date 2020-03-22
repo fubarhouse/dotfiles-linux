@@ -9,15 +9,19 @@ font pango:monospace 8
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# NetworkManager is the most popular way to manage wireless networks on Linux,
+# NetworkManager
+#
+# The most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
 # Window configuration for Jetbrains products
+#
 for_window [class="^com-intellij-updater-Runner$" title="^Update$"] floating enable
 for_window [instance="^sun-awt-X11-XDialogPeer$" title="^Complete Installation$"] floating enable
 
 # Window configuration for Steam
+#
 # https://github.com/ValveSoftware/steam-for-linux/issues/1040
 # https://github.com/z3ntu/dotfiles/blob/master/i3/.config/i3/config#L55-L65
 for_window [class="^Steam$" title="^Friends$"] floating enable
@@ -41,10 +45,10 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
+# Terminal Keyboard Shortcut
 bindsym $mod+Return exec i3-sensible-terminal
 
-# kill focused window
+# Quit Keyboard Shortcut
 bindsym $mod+Shift+q kill
 
 # Application launcher
@@ -65,7 +69,7 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# move focused window
+# Move focused window shortcuts
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
