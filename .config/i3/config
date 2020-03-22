@@ -214,7 +214,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
 # https://gitlab.com/flib99/i3-workspace-names
 #exec_always --no-startup-id exec i3-workspace-names &
 
-for_window [class="^.*"] border pixel 2
+# (No) Title Bars
+for_window [class="^.*"] border pixel 0
 
 # Background
 exec feh --bg-scale ~/Assets/169654.jpg
