@@ -216,6 +216,9 @@
 # (No) Title Bars
   for_window [class="^.*"] border pixel 0
 
+# Teams
+  for_window [title="Microsoft Teams Notification"] floating enable
+
 # Background
   exec feh --bg-scale ~/Assets/169654.jpg
 
