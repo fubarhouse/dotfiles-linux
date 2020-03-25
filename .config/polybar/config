@@ -275,6 +275,7 @@ label-warn-foreground = ${colors.secondary}
 #ramp-2 = 
 #ramp-foreground = ${colors.foreground-alt}
 
+; TODO Fix this
 [module/powermenu]
 type = custom/menu
 
