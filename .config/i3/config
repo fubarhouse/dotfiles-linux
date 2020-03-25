@@ -249,3 +249,10 @@
 # Automatic Workspace Names
 # Todo: Patch/fork the script; add icons for common apps.
   exec_always ~/.config/i3/scripts/justbuchanan/autoname_workspaces.py &
+
+# Emoji-Keyboard
+#
+# Emoji keyboard from https://github.com/OzymandiasTheGreat/emoji-keyboard
+# Install the appimage to $PATH to utilize this.
+# Currently broken due to abstructive error,
+#  exec_always emoji-keyboard &
