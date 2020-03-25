@@ -1,1 +1,6 @@
+# Ignore everything except what is excluded.
 *
+# Exclusions
+!/.gitignore
+!/.config/i3/config
+!/.config/polybar/*
