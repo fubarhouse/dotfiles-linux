@@ -109,11 +109,6 @@ label-urgent-padding = 2
 ; Separator in between workspaces
 ; label-separator = |
 
-#[module/backlight-acpi]
-#inherit = module/xbacklight
-#type = internal/backlight
-#card = intel_backlight
-
 [module/cpu]
 type = internal/cpu
 interval = 2
