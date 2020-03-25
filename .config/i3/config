@@ -248,4 +248,4 @@
 
 # Automatic Workspace Names
 # Todo: Patch/fork the script; add icons for common apps.
-exec_always ~/.config/i3/scripts/justbuchanan/autoname_workspaces.py &
+  exec_always ~/.config/i3/scripts/justbuchanan/autoname_workspaces.py &
