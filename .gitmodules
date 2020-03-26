@@ -1,3 +1,6 @@
 [submodule ".config/i3/scripts/justbuchanan"]
 	path = .config/i3/scripts/justbuchanan
 	url = https://github.com/justbuchanan/i3scripts.git
+[submodule ".config/polybar/scripts/polybar-pulseaudio-control"]
+	path = .config/polybar/scripts/polybar-pulseaudio-control
+	url = https://github.com/marioortizmanero/polybar-pulseaudio-control.git
