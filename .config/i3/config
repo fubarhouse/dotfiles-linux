@@ -256,3 +256,8 @@
 # Install the appimage to $PATH to utilize this.
 # Currently broken due to abstructive error,
 #  exec_always emoji-keyboard &
+
+# Dunst
+#
+# Start the Dunst notification system
+  exec --no-startup-id dunst
