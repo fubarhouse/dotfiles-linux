@@ -221,7 +221,7 @@
   for_window [title="Microsoft Teams Notification"] floating enable
 
 # Slack
-  for_window [title="^Slack$"] floating enable
+# for_window [title="^Slack$"] floating enable
 
 # Background
   exec feh --bg-scale ~/Assets/169654.jpg
