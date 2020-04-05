@@ -257,6 +257,14 @@
 # Currently broken due to abstructive error,
 #  exec_always emoji-keyboard &
 
+# Compton
+#
+# Starts Compton
+# For proper use use package 'compton-tryone-git' from AUR.
+# Normal compton is dated, unsupported and does not support
+# blurring effects.
+  exec compton --backend glx --blur-method kawase --blur-background --blur-strength 8
+
 # Dunst
 #
 # Start the Dunst notification system
