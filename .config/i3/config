@@ -1,5 +1,6 @@
 # Set $mod
-  set $mod Mod4
+# Formerly Mod4 (Windows)
+  set $mod Mod1
 
 # Global font.
   font pango:monospace 8
