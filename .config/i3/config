@@ -1,19 +1,22 @@
 # Set $mod
 # Formerly Mod4 (Windows)
+#
   set $mod Mod1
 
 # Global font.
-  font pango:monospace 8
-  #font pango:DejaVu Sans Mono 8
+#
+  font pango:Fira Mono 8
 
 # XSS-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
+#
   exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager
 #
 # The most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
+#
   exec --no-startup-id nm-applet
 
 # Window configuration for Jetbrains products
@@ -21,12 +24,13 @@
   for_window [class="^com-intellij-updater-Runner$" title="^Update$"] floating enable
   for_window [instance="^sun-awt-X11-XDialogPeer$" title="^Complete Installation$"] floating enable
   for_window [class="^jetbrains-toolbox$"] floating enable
-  for_window [name="License Activation" class="^jetbrains-*$"] floating enable
+  # for_window [name="License Activation" class="^jetbrains-*$"] floating enable
 
 # Window configuration for Steam
 #
 # https://github.com/ValveSoftware/steam-for-linux/issues/1040
 # https://github.com/z3ntu/dotfiles/blob/master/i3/.config/i3/config#L55-L65
+#
   for_window [class="^Steam$" title="^Friends$"] floating enable
   for_window [class="^Steam$" title="Steam - News"] floating enable
   for_window [class="^Steam$" title=".* - Chat"] floating enable
@@ -39,6 +43,7 @@
   for_window [title="^Steam Keyboard$"] floating enable
 
 # Use pactl to adjust volume in PulseAudio.
+#
   set $refresh_i3status killall -SIGUSR1 i3status
   bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
   bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
@@ -46,12 +51,15 @@
   bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use Mouse+$mod to drag floating windows to their wanted position
+#
   floating_modifier $mod
 
 # Terminal Keyboard Shortcut
+#
   bindsym $mod+Return exec i3-sensible-terminal
 
 # Quit Keyboard Shortcut
+#
   bindsym $mod+Shift+q kill
 
 # Application launcher
@@ -64,48 +72,60 @@
 # Rofi:
 # https://github.com/davatorium/rofi
 # https://raw.githubusercontent.com/davatorium/rofi-themes/master/Official%20Themes/Arc-Dark.rasi
+#
   bindsym $mod+d exec rofi -show run -theme Arc-Dark
 
 # Change focus shortcuts, you can use the cursor keys:
+#
   bindsym $mod+Left focus left
   bindsym $mod+Down focus down
   bindsym $mod+Up focus up
   bindsym $mod+Right focus right
 
 # Move focused window shortcuts
+#
   bindsym $mod+Shift+Left move left
   bindsym $mod+Shift+Down move down
   bindsym $mod+Shift+Up move up
   bindsym $mod+Shift+Right move right
 
 # Split in horizontal orientation
+#
   bindsym $mod+h split h
 
 # Split in vertical orientation
+#
   bindsym $mod+v split v
 
 # Enter fullscreen mode for the focused container
+#
   bindsym $mod+f fullscreen toggle
 
 # Change container layout (stacked, tabbed, toggle split)
+#
   bindsym $mod+s layout stacking
   bindsym $mod+w layout tabbed
   bindsym $mod+e layout toggle split
 
 # Toggle tiling / floating / window
+#
   bindsym $mod+Shift+space floating toggle
 
 # Change focus between tiling / floating windows
+#
   bindsym $mod+space focus mode_toggle
 
 # Focus the parent container
+#
   bindsym $mod+a focus parent
 
 # Focus the child container
+#
   #bindsym $mod+d focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
+#
   set $ws1 "1"
   set $ws2 "2"
   set $ws3 "3"
@@ -118,6 +138,7 @@
   set $ws10 "10"
 
 # Base colour scheme
+#
   set $base00 #101218
   set $base01 #1f222d
   set $base02 #252936
@@ -136,6 +157,7 @@
   set $base0F #fcc09e
 
 # Switch to workspace
+#
   bindsym $mod+grave workspace next
   bindsym $mod+1 workspace number $ws1
   bindsym $mod+2 workspace number $ws2
@@ -149,6 +171,7 @@
   bindsym $mod+0 workspace number $ws10
 
 # Move focused container to workspace
+#
   bindsym $mod+Shift+1 move container to workspace number $ws1
   bindsym $mod+Shift+2 move container to workspace number $ws2
   bindsym $mod+Shift+3 move container to workspace number $ws3
@@ -161,22 +184,26 @@
   bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Reload the configuration file
+#
   bindsym $mod+Shift+c reload
 
 # Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+#
   bindsym $mod+Shift+r restart
 
 # Exit i3 (logs you out of your X session)
+#
   bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # Widow Colours
+#
   client.focused $base0D $base0D $base00 $base01
   client.focused_inactive $base02 $base02 $base03 $base01
   client.unfocused $base01 $base01 $base03 $base01
   client.urgent $base02 $base08 $base07 $base08
 
 # Resize window (you can also use the mouse for that)
-# To be considered for removal.
+#
   mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -202,6 +229,7 @@
   }
 
 # Bind resize:
+#
   bindsym $mod+r mode "resize"
 
 # Polybar integratipn
@@ -218,23 +246,20 @@
   #exec_always --no-startup-id exec i3-workspace-names &
 
 # (No) Title Bars
+#
   for_window [class="^.*"] border pixel 0
 
 # Teams
+#
   for_window [title="Microsoft Teams Notification"] floating enable
 
 # Slack
+#
 # for_window [title="^Slack$"] floating enable
 
 # Background
-  exec feh --bg-scale ~/Assets/169654.jpg
-
-# Alt-tab
 #
-# This works okay... but needs work.
-# A decision is being made as to if this stays.
-# https://github.com/sagb/alttab
-  #exec_always alttab
+  exec feh --bg-scale ~/Assets/169654.jpg
 
 # Gaps
 #
@@ -251,14 +276,8 @@
 
 # Automatic Workspace Names
 # Todo: Patch/fork the script; add icons for common apps.
-  exec_always ~/.config/i3/scripts/justbuchanan/autoname_workspaces.py &
-
-# Emoji-Keyboard
 #
-# Emoji keyboard from https://github.com/OzymandiasTheGreat/emoji-keyboard
-# Install the appimage to $PATH to utilize this.
-# Currently broken due to abstructive error,
-#  exec_always emoji-keyboard &
+  exec_always ~/.config/i3/scripts/justbuchanan/autoname_workspaces.py &
 
 # Compton
 #
