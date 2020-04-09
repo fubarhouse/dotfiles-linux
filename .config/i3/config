@@ -266,9 +266,9 @@
 # For proper use use package 'compton-tryone-git' from AUR.
 # Normal compton is dated, unsupported and does not support
 # blurring effects.
-  exec compton --backend glx --blur-method kawase --blur-background --blur-strength 8
+  exec_always compton --backend xrender --blur-background --blur-strength 8 &
 
 # Dunst
 #
 # Start the Dunst notification system
-  exec --no-startup-id dunst
+  exec --no-startup-id dunst &
