@@ -21,6 +21,7 @@
   for_window [class="^com-intellij-updater-Runner$" title="^Update$"] floating enable
   for_window [instance="^sun-awt-X11-XDialogPeer$" title="^Complete Installation$"] floating enable
   for_window [class="^jetbrains-toolbox$"] floating enable
+  for_window [name="License Activation" class="^jetbrains-*$"] floating enable
 
 # Window configuration for Steam
 #
