@@ -276,7 +276,7 @@
 # This is specific to the exact hardware configuration of the system.
 # Please uncomment if you are not me or not using my desktop.
   exec xrandr --output DVI-I-1 --right-of HDMI-0
-  exec xrandr --output HDMI-0 --mode 1680x1050
+  exec xrandr --output HDMI-0 --mode 1680x1050 --primary
 
 # Automatic Workspace Names
 # Todo: Patch/fork the script; add icons for common apps.
