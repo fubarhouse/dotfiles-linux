@@ -62,6 +62,10 @@
 #
   bindsym $mod+Shift+q kill
 
+# Emoji Keyboard
+#
+  bindsym $mod+space exec ibus emoji
+
 # Application launcher
 #
 # Launch applications with Rofi w/ the Arc-Dark theme.
