@@ -6,3 +6,4 @@ killall -q polybar
 # polybar-msg cmd quit
 
 polybar top-bar -r &
+polybar coronavirus -r &
