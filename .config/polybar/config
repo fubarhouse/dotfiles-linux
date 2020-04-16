@@ -21,28 +21,28 @@ click-right = /usr/bin/firefox https://www.covid19.act.gov.au/ &
 [module/coronavirus-stats-active]
 type = custom/script
 label =  %output%
-exec = /home/karl/go/bin/mycorona -l "Australian Capital Territory" -o "Australia" -a -g
+exec = /home/karl/go/bin/mycorona -l "Australian Capital Territory" -o "Australia" -a
 interval = 900
 format-underline = #33FFFF
 
 [module/coronavirus-stats-confirmed]
 type = custom/script
 label =  %output%
-exec = /home/karl/go/bin/mycorona -l "Australian Capital Territory" -o "Australia" -c -g
+exec = /home/karl/go/bin/mycorona -l "Australian Capital Territory" -o "Australia" -c
 interval = 900
 format-underline = #3333FF
 
 [module/coronavirus-stats-dead]
 type = custom/script
 label =  %output%
-exec = /home/karl/go/bin/mycorona -l "Australian Capital Territory" -d -g
+exec = /home/karl/go/bin/mycorona -l "Australian Capital Territory" -d
 interval = 900
 format-underline = #FF3333
 
 [module/coronavirus-stats-recovered]
 type = custom/script
 label =  %output%
-exec = /home/karl/go/bin/mycorona -l "Australian Capital Territory" -r -g
+exec = /home/karl/go/bin/mycorona -l "Australian Capital Territory" -r
 interval = 900
 format-underline = #33FF33
 
