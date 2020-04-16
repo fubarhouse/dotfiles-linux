@@ -78,7 +78,7 @@ font-4 = GLYPHICONS\ Basic\ Set:style=Regular
 
 modules-left = i3
 # modules-center = 
-modules-right = filesystem pulseaudio-control memory cpu wlan eth temperature date powermenui coronavirus
+modules-right = filesystem pulseaudio-control memory cpu wlan eth temperature date powermenu
 
 tray-position = right
 tray-padding = 2
