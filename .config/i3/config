@@ -45,8 +45,8 @@
 # Use pactl to adjust volume in PulseAudio.
 #
   set $refresh_i3status killall -SIGUSR1 i3status
-  bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
-  bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
+  bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2% && $refresh_i3status
+  bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2% && $refresh_i3status
   bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
   bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
@@ -117,7 +117,7 @@
 
 # Change focus between tiling / floating windows
 #
-  bindsym $mod+space focus mode_toggle
+  #bindsym $mod+z focus mode_toggle
 
 # Focus the parent container
 #
@@ -275,8 +275,8 @@
 #
 # This is specific to the exact hardware configuration of the system.
 # Please uncomment if you are not me or not using my desktop.
-  exec xrandr --output DVI-I-1 --right-of HDMI-0
-  exec xrandr --output HDMI-0 --mode 1680x1050 --primary
+  exec xrandr --output DVI-I-1 --mode 1680x1050 --right-of HDMI-0 --set underscan on
+  exec xrandr --output HDMI-0 --mode 1680x1050 --left-of DVI-I-1 --primary
 
 # Automatic Workspace Names
 # Todo: Patch/fork the script; add icons for common apps.
