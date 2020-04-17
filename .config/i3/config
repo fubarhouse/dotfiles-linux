@@ -5,12 +5,13 @@
 
 # Global font.
 #
-  font pango:Fira Mono 8
+  font pango:Fira Code 8
 
 # XSS-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 #
   exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+  bindsym $mod+shift+l exec i3lock-fancy -gpf Fira\ Code
 
 # NetworkManager
 #
