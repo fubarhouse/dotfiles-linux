@@ -78,7 +78,7 @@
 # https://github.com/davatorium/rofi
 # https://raw.githubusercontent.com/davatorium/rofi-themes/master/Official%20Themes/Arc-Dark.rasi
 #
-  bindsym $mod+d exec rofi -show run -theme Arc-Dark
+  bindsym $mod+d exec rofi -show run -theme Nord
 
 # Change focus shortcuts, you can use the cursor keys:
 #
@@ -248,7 +248,7 @@
 # PKGBUILD has type assertion errors, cannot install without
 # additional effort, so I'll wait for another release.
 # https://gitlab.com/flib99/i3-workspace-names
-  #exec_always --no-startup-id exec i3-workspace-names &
+  exec_always --no-startup-id exec i3-workspace-names &
 
 # (No) Title Bars
 #

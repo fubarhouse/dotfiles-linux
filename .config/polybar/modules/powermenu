@@ -2,6 +2,7 @@
 type = custom/menu
 
 format-spacing = 1
+format-padding = 1
 
 label-open = 
 label-open-foreground = ${colors.secondary}

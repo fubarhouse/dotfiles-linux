@@ -2,6 +2,7 @@
 type = custom/script
 tail = true
 label=%output%
+format-padding = 1
 format-underline = #00C700
 
 exec = $HOME/.config/polybar/scripts/polybar-pulseaudio-control/pulseaudio-control.bash listen

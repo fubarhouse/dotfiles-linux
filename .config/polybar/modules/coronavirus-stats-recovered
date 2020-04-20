@@ -3,4 +3,5 @@ type = custom/script
 label =  %output%
 exec = /home/karl/go/bin/mycorona -l "Australian Capital Territory" -r
 interval = 900
+format-padding = 1
 format-underline = #33FF33

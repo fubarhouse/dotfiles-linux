@@ -1,7 +1,7 @@
 [bar/bar-bottom]
 width = 100%
 height = 28
-bottom = false
+bottom = true
 fixed-center = false
 
 background = ${colors.polar-night-1}
@@ -11,9 +11,9 @@ font-0 = "SauceCodePro Nerd Font:style=Medium:size=9;2"
 font-1 = "SauceCodePro Nerd Font:style=Bold:size=9;2"
 font-2 = "SauceCodePro Nerd Font:size=12;3"
 font-3 = "SauceCodePro Nerd Font:size=16;4"
-font-4 = Fira\ Code:style=Bold
-font-5 = FontAwesome:style=Regular
-font-6 = GLYPHICONS\ Basic\ Set:style=Regular
+font-4 = Fira\ Code:style=Bold:size=12;3
+font-5 = FontAwesome:style=Regular:size=9;2
+font-6 = GLYPHICONS\ Basic\ Set:style=Regular:size=9;2
 
 ;modules-left =
 modules-center = coronavirus coronavirus-stats-confirmed coronavirus-stats-recovered coronavirus-stats-active coronavirus-stats-dead

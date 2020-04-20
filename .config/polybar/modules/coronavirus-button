@@ -4,5 +4,6 @@ content =  
 content-padding = 1
 content-foreground = #FF3333
 content-underline = #FF3333
+format-padding = 1
 click-left = /usr/bin/firefox https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6 &
 click-right = /usr/bin/firefox https://www.covid19.act.gov.au/ &

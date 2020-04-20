@@ -8,6 +8,7 @@ date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
 
+format-padding = 1
 format-prefix = 
 format-prefix-foreground = ${colors.nord-blue-light}
 ;format-underline = #0a6cf5
