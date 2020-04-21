@@ -306,3 +306,8 @@
 #
 # Start the Dunst notification system
   exec --no-startup-id dunst &
+
+# Better layout placement.
+# https://github.com/chmln/i3-auto-layout
+#
+  exec_always --no-startup-id /usr/bin/i3-auto-layout &
