@@ -13,6 +13,7 @@ include-file = ~/.config/polybar/modules/coronavirus-stats-dead
 include-file = ~/.config/polybar/modules/coronavirus-stats-recovered
 
 ; Include all other modules
+include-file = ~/.config/polybar/modules/audio
 include-file = ~/.config/polybar/modules/cpu
 include-file = ~/.config/polybar/modules/date
 include-file = ~/.config/polybar/modules/eth

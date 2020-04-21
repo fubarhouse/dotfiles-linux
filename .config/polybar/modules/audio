@@ -1,0 +1,11 @@
+[module/audio]
+type = custom/text
+content = 
+content-padding = 1
+
+click-right = exec pavucontrol &
+click-left = ~/.config/polybar/scripts/polybar-pulseaudio-control/pulseaudio-control.bash togmute
+click-middle = exec pulseaudio-eqalizer-gtk &
+scroll-up = ~/.config/polybar/scripts/polybar-pulseaudio-control/pulseaudio-control.bash up
+scroll-down = ~/.config/polybar/scripts/polybar-pulseaudio-control/pulseaudio-control.bash down
+label-foreground = ${colors.foreground}
