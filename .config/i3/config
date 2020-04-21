@@ -27,6 +27,10 @@
   for_window [class="^jetbrains-toolbox$"] floating enable
   # for_window [name="License Activation" class="^jetbrains-*$"] floating enable
 
+# GitAhead floating.
+#
+  for_window [class="^GitAhead$"] floating enable
+
 # Window configuration for Steam
 #
 # https://github.com/ValveSoftware/steam-for-linux/issues/1040
