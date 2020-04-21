@@ -1,6 +1,9 @@
 ; Include Colour Scheme
 include-file = ~/.config/polybar/colours
 
+; Private
+include-file = ~/.config/polybar/modules/bamboo
+
 ; Include Bars
 include-file = ~/.config/polybar/modules/bar-bottom
 include-file = ~/.config/polybar/modules/bar-top
