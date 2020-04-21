@@ -7,17 +7,15 @@ fixed-center = false
 background = ${colors.polar-night-1}
 foreground = ${colors.foreground}
 
-font-0 = "SauceCodePro Nerd Font:style=Medium:size=9;2"
-font-1 = "SauceCodePro Nerd Font:style=Bold:size=9;2"
-font-2 = "SauceCodePro Nerd Font:size=12;3"
-font-3 = "SauceCodePro Nerd Font:size=16;4"
-font-4 = Fira\ Code:style=Bold:size=12;3
-font-5 = FontAwesome:style=Regular:size=9;2
-font-6 = GLYPHICONS\ Basic\ Set:style=Regular:size=9;2
+font-0 = "FiraCode Nerd Font:style=Regular:size=9;1"
+font-1 = "FiraCode Nerd Font Mono:style=Bold"
+font-2 = "FontAwesome:style=Regular:size=9;2"
+font-3 = "FiraMono Nerd Font:style=Regular:size=9:1"
+font-4 = "GLYPHICONS Basic Set:style=Regular:size=9;2"
 
 modules-left = i3
 modules-center = xwindow
-modules-right = ipinfo filesystem pulseaudio-control memory cpu eth wlan temperature date powermenu
+modules-right = ipinfo filesystem audio memory cpu wlan date bamboo powermenu
 
 tray-background = ${colors.polar-night-2}
 tray-position = right
