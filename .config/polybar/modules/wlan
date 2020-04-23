@@ -3,12 +3,12 @@ type = internal/network
 interface = enp0s25
 interval = 1.0
 
-format-connected = <ramp-signal>
+#format-connected = <ramp-signal>
 format-connected-padding = 1
 format-padding = 1
 ;format-connected-prefix = %{T3}直%{T-}
 ;format-connected-prefix-foreground = ${colors.nord-green}
-label-connected = "  %downspeed%"
+label-connected = "  %downspeed% %upspeed%"
 label-connected-foreground = ${colors.nord-green}
 
 format-disconnected = <label-disconnected>
