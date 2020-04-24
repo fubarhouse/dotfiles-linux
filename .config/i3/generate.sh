@@ -8,7 +8,6 @@ DIRECTORY="${HOME}/.config/i3"
 } > ${DIRECTORY}/config
 
 find "${DIRECTORY}/includes" -iname *.conf -type f | sort | while IFS= read -r file; do
-  echo $file
   {
     echo "";
     cat "${file}";
