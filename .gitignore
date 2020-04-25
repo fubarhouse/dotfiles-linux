@@ -2,5 +2,11 @@
 *
 # Exclusions
 !/.gitignore
+!/.config/bspwm/bspwmrc
+!/.config/dunst/dunstrc
 !/.config/i3/config
+!/.config/i3/includes/*
 !/.config/polybar/*
+!/.config/rofi/*
+!/.config/sxhkd/sxhkdrc
+!/.config/termite/config
