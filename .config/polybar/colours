@@ -1,13 +1,14 @@
 [colors]
 
-black = #000
-white = #FFF
+background = ${xrdb:color0:#222}
+foreground = ${xrdb:color7:#FFF}
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
 
 trans = #00000000
 semi-trans = #55000000
-
-background = #000
-foreground = #FFF
 
 success = #A3BE8C
 warning = #EBCB8B
@@ -33,15 +34,3 @@ session = #DD5144
 steam = #00ADEE
 terminal = #63FC01
 window = #EAD673
-
-
-; Superseded
-;background = ${xrdb:color0:#222}
-;background = #222
-background-alt = #444
-;foreground = ${xrdb:color7:#222}
-;foreground = #dfdfdf
-foreground-alt = #555
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
