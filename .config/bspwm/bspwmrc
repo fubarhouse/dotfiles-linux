@@ -1,23 +1,30 @@
 #! /bin/sh
 
-#### AUTOSTART ####
+# SXHKD
 sxhkd &
-compton &
-#nitrogen --restore &
+# Compton
+compton --backend xrender --blur-background --blur-strength 8 &
+# Polybar
 $HOME/.config/polybar/launch.sh &
+$ Dunst
+dunst &
+$ Feh
+feh --bg-scale ~/Assets/169654.jpg
+# NetworkManager
+nm-applet &
 
+# Monitor configuration
 xrandr --output DVI-I-1 --mode 1680x1050 --right-of HDMI-0 --set underscan on
 xrandr --output HDMI-0 --mode 1680x1050 --left-of DVI-I-1 --primary
 
-#### MONITORS ####
+# Monitor workspaces
 bspc monitor DVI-I-1 -d 1 2 3 4 5 6 7 8 9 10
 bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9
 
-#### BSPWM configuration ####
-#bspc config border_radius                8
+# Config
 bspc config border_width                  2
-bspc config window_gap                    10
-bspc config top_padding                   20
+bspc config window_gap                    5
+bspc config top_padding                   25
 bspc config bottom_padding                0
 bspc config left_padding                  0
 bspc config right_padding                 0
@@ -36,15 +43,15 @@ bspc config pointer_action1 move
 bspc config pointer_action2 resize_side
 bspc config pointer_action3 resize_corner
 
-#### BSPWM coloring ####
+# Colours
 bspc config normal_border_color		      "#4c566a"
 bspc config active_border_color	        "#1e1e1e"
 bspc config focused_border_color	      "#5e81ac"
 bspc config presel_feedback_color	      "#5e81ac"
 bspc config urgent_border_color 	      "#dd2727"
 
-#bspc rule -a Gimp desktop='^8' state=floating follow=on
-#bspc rule -a Chromium desktop='^2'
-#bspc rule -a mplayer2 state=floating
-#bspc rule -a Kupfer.py focus=on
-#bspc rule -a Screenkey manage=off
+# Rules
+bspc rule -a "GitAhead" state=floating
+bspc rule -a "Slack" state=floating
+bspc rule -a "Steam" state=floating
+bspc rule -a "Microsoft Teams Notification" state=floating

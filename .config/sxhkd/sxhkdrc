@@ -1,65 +1,60 @@
 # WM INDEPENDENT KEYBINDINGS
 
 # make sxhkd reload its configuration files:
-alt + shift + c
-	pkill -USR1 -x sxhkd
-
-# BSPWM HOTKEYS
-
-# quit bspwm
-alt + shift + e
-	bspc quit
-
-# close and kill
-alt + shift + q
-	bspc node -c
+# alt + shift + c
+# pkill -USR1 -x sxhkd
 
 # alternate between the tiled and monocle layout
-super + m
-	bspc desktop -l next
+# super + m
+# bspc desktop -l next
 
-# send the newest marked node to the newest preselected node
-super + y
-	bspc node newest.marked.local -n newest.!automatic.local
-
-# swap the current node and the biggest node
-super + g
-	bspc node -s biggest
-
-
-# STATE/FLAGS
-
-# set the window state
+# Set the window state
 alt + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
-# MOVE/RESIZE
+# Close focused
+alt + shift + q
+	bspc node -c
 
-# move a floating window
-#alt + {Left,Down,Up,Right}
-#	bspc node -v {-20 0,0 20,0 -20,20 0}
+# Volume Controls
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +2%
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -2%
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+XF86AudioMicMute
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
+# Switch to workspace
+alt + {1-9,0}
+      bspc desktop -f '^{1-9,10}' --follow
 
-# APPLICATION KEYBINDINGS (Alt + Key)
+# Move focused container to workspace
+alt + shift + {1-9,0}
+      bspc node -d '^{1-9,10}' --follow
 
-# terminal emulator
-alt + Return
-	termite
-# launch browser
-alt + b
-    /usr/bin/firefox
-# launch joplin
-alt + alt + j
-    joplin
-# launch file manager
-alt + p
-    polo-gtk
-
-# DMENU SCRIPTS (Alt+Ctrl+Key)
-
-# run program launcher
+# Applications....
 alt + d
 	rofi -show run
-# edit common config files
-alt + ctrl + e
-   /home/dt/.dmenu/dmenu-edit-configs.sh
+alt + Return
+	termite -e /usr/bin/bash
+alt + b
+    /usr/bin/firefox
+alt + alt + j
+    joplin
+alt + p
+    polo-gtk
+alt + shift + e
+	bspc quit
+alt + space
+    ibus emoji
+
+# Move a floating window
+# alt + shift + {Left,Down,Up,Right}
+# bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# TODO
+# Additional audio keyboard keys
+# XF86Audio{Stop,Prev,Next,Play}
+# mpc {stop,prev,next,toggle}
