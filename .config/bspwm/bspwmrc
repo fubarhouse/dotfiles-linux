@@ -6,10 +6,12 @@ sxhkd &
 compton --backend xrender --blur-background --blur-strength 8 &
 # Polybar
 $HOME/.config/polybar/launch.sh &
-$ Dunst
+# Dunst
 dunst &
-$ Feh
-feh --bg-scale ~/Assets/169654.jpg
+# Feh
+feh --bg-scale /home/karl/Assets/169654.jpg
+# Wal
+wal -i /home/karl/Assets/169654.jpg
 # NetworkManager
 nm-applet &
 
