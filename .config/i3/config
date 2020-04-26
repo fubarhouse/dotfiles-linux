@@ -234,9 +234,10 @@ client.background       $bg
 #
   bindsym $mod+space exec ibus emoji
 
-# Feh - background
+# Feh/Wal - background
 #
   exec feh --bg-scale ~/Assets/169654.jpg
+  exec wal -i ~/Assets/169654.jpg
 
 # GitAhead floating.
 #
