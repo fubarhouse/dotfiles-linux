@@ -54,22 +54,22 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    background = "#222222"
-    foreground = "#888888"
-    frame_color = "#444444"
+    background = "{background}"
+    foreground = "{foreground}"
+    frame_color = "{background}"
     frame_width = 3
     timeout = 10
 
 [urgency_normal]
-    background = "#222222"
-    foreground = "#dfdfdf"
-    frame_color = "#444444"
+    background = "{background}"
+    foreground = "{foreground}"
+    frame_color = "{background}"
     frame_width = 3
     timeout = 10
 
 [urgency_critical]
-    background = "#222222"
-    foreground = "#f90000"
-    frame_color = "#f90000"
+    background = "{background}"
+    foreground = "{foreground}"
+    frame_color = "{foreground}"
     frame_width = 3
     timeout = 0
