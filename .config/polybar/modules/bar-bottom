@@ -4,7 +4,7 @@ height = 28
 bottom = true
 fixed-center = false
 
-background = ${colors.polar-night-1}
+background = ${colors.background}
 foreground = ${colors.foreground}
 
 font-0 = "FiraCode Nerd Font:style=Regular:size=9;1"
