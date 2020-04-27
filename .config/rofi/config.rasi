@@ -3,7 +3,10 @@ configuration {
     show-icons: true;
 
     # Light theme.
-    rofi.theme: ~/.cache/wal/colors-rofi-light;
+    # rofi.theme: ~/.cache/wal/colors-rofi-light;
+
+    # Arc-Dark:
+    # rofi.theme: ~/.config/rofi/themes/Arc-Dark.rasi
 
     # Dark theme.
     rofi.theme: ~/.cache/wal/colors-rofi-dark;
