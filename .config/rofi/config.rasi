@@ -1,6 +1,8 @@
-# Light theme.
-# rofi.theme: ~/.cache/wal/colors-rofi-light
+configuration {
 
-# Dark theme.
-rofi.theme: ~/.cache/wal/colors-rofi-dark
+    # Light theme.
+    rofi.theme: ~/.cache/wal/colors-rofi-light;
 
+    # Dark theme.
+    rofi.theme: ~/.cache/wal/colors-rofi-dark;
+}
