@@ -1,8 +1,8 @@
 # WM INDEPENDENT KEYBINDINGS
 
 # make sxhkd reload its configuration files:
-# alt + shift + c
-# pkill -USR1 -x sxhkd
+alt + shift + c
+    pkill -USR1 -x sxhkd
 
 # alternate between the tiled and monocle layout
 # super + m
@@ -37,6 +37,8 @@ alt + shift + {1-9,0}
 # Applications....
 alt + d
 	rofi -show run
+alt + Tab
+	rofi -show window
 alt + Return
 	termite -e /usr/bin/bash
 alt + b
@@ -51,8 +53,19 @@ alt + space
     ibus emoji
 
 # Move a floating window
-# alt + shift + {Left,Down,Up,Right}
-# bspc node -v {-20 0,0 20,0 -20,20 0}
+#alt + shift + {Left,Down,Up,Right}
+#    bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# focus the next/previous node
+alt + {Up,Down}
+	bspc node -f {prev,next}.local.!above
+
+# Different style of movement: transplant into window in chosen direction
+alt + shift + {Left,Down,Up,Right}
+	/home/karl/.config/sxhkd/euclid_mover {west,south,north,east}
+
+#alt + shift + {Left,Down,Up,Right}
+#    bspc window -w {left.manual,down.manual,up.manual,right.manual}
 
 # TODO
 # Additional audio keyboard keys
