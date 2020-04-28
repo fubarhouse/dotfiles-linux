@@ -5,11 +5,11 @@ index-sort = true
 wrapping-scroll = false
 
 label-focused = %name%
-label-focused-foreground = ${colors.white}
+label-focused-foreground = ${colors.foreground}
 label-focused-padding = 1
 
 label-unfocused = %name%
-label-unfocused-foreground = ${colors.white}
+label-unfocused-foreground = ${colors.foreground}
 label-unfocused-padding = 1
 
 label-visible = %name%
