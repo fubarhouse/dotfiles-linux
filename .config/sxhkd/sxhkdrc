@@ -57,8 +57,10 @@ alt + space
 #    bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # focus the next/previous node
-alt + {Up,Down}
-	bspc node -f {prev,next}.local.!above
+#alt + {Up,Down}
+#	bspc node -f {prev,next}.local.!above
+alt + {Up,Down,Left,Right}
+	$HOME/bin/focusmover {north,south,west,east}
 
 # Different style of movement: transplant into window in chosen direction
 alt + shift + {Left,Down,Up,Right}
