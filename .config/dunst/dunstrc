@@ -1,6 +1,6 @@
 [colors]
-	background = "#858586"
-	foreground = "#bfbfc0"
+	background = "#222222"
+	foreground = "#F0F0F0"
 
 [global]
     ### Display ###
@@ -76,17 +76,17 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    background = colors.background
-    foreground = colors.foreground
+	background = "#222222"
+	foreground = "#F0F0F0"
     timeout = 10
 
 [urgency_normal]
-    background = colors.background
-    foreground = colors.foreground
+	background = "#222222"
+	foreground = "#F0F0F0"
     timeout = 10
 
 [urgency_critical]
-    background = colors.background
-    foreground = colors.foreground
-    frame_color = "#3F3E41"
+	background = "#222222"
+	foreground = "#F0F0F0"
+    frame_color = "#6e1b1c"
     timeout = 0
