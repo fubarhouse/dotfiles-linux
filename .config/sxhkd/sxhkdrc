@@ -28,11 +28,15 @@ XF86AudioMicMute
 
 # Switch to workspace
 alt + {1-9,0}
-      bspc desktop -f '^{1-9,10}' --follow
+      bspc desktop -f '^{1-9,10}'
 
 # Move focused container to workspace
 alt + shift + {1-9,0}
-      bspc node -d '^{1-9,10}' --follow
+      bspc node -d '^{1-9,10}'
+
+# System Lock
+alt + shift + l
+    i3lock-fancy -gpf Fira\ Code
 
 # Applications....
 alt + d
