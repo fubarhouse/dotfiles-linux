@@ -56,6 +56,9 @@ alt + shift + e
 alt + space
     ibus emoji
 
+alt + shift + r
+    polybar-msg cmd restart
+
 # Move a floating window
 #alt + shift + {Left,Down,Up,Right}
 #    bspc node -v {-20 0,0 20,0 -20,20 0}
