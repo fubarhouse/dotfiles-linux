@@ -18,7 +18,7 @@ font-4 = "GLYPHICONS Basic Set:style=Regular:size=9;2"
 
 modules-left = bspwm
 modules-center = xwindow
-modules-right = filesystem audio memory cpu date bamboo powermenu
+modules-right = filesystem audio temperature memory cpu date bamboo powermenu
 
 tray-background = ${colors.polar-night-2}
 tray-position = right
