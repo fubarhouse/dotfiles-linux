@@ -82,4 +82,8 @@ alt + shift + {Left,Down,Up,Right}
 # mpc {stop,prev,next,toggle}
 
 XF86AudioPlay
-    dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.vlc /org/mpris/MediaPlayer2   org.mpris.MediaPlayer2.Player.PlayPause
+    playerctl -p headset play-pause
+XF86AudioNext
+    playerctl -p headset next
+XF86AudioPrev
+    playerctl -p headset previous
