@@ -8,7 +8,8 @@ line-size = 1
 padding-left = 2
 
 background = ${colors.background}
-foreground = ${colors.foreground}
+;foreground = ${colors.foreground}
+foreground = ${colors.nord-red}
 
 font-0 = "FiraCode Nerd Font:style=Regular:size=9;1"
 font-1 = "FiraCode Nerd Font Mono:style=Bold"
@@ -17,10 +18,10 @@ font-3 = "FiraMono Nerd Font:style=Regular:size=9:1"
 font-4 = "GLYPHICONS Basic Set:style=Regular:size=9;2"
 
 modules-left = bspwm
-modules-center = xwindow
+modules-center = playerctl
 modules-right = filesystem audio temperature memory cpu date bamboo powermenu
 
-tray-background = ${colors.polar-night-2}
+tray-background = ${colors.highlight}
 tray-position = right
 tray-maxsize = 16
 
