@@ -9,7 +9,7 @@ alt + shift + c
 # bspc desktop -l next
 
 # Set the window state
-alt + {t,shift + t,s,f}
+alt + {t,shift + d,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # Close focused
