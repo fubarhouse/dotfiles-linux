@@ -1,0 +1,7 @@
+[module/playerctl]
+type = custom/script
+label =  %output%
+exec = playerctl -p headset metadata xesam:title
+interval = 1
+format-padding = 1
+;format-underline = ${colors.highlight}

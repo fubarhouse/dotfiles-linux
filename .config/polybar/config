@@ -25,6 +25,7 @@ include-file = ~/.config/polybar/modules/filesystem
 include-file = ~/.config/polybar/modules/i3
 include-file = ~/.config/polybar/modules/ipinfo
 include-file = ~/.config/polybar/modules/memory
+include-file = ~/.config/polybar/modules/playerctl
 include-file = ~/.config/polybar/modules/powermenu
 include-file = ~/.config/polybar/modules/pulseaudio-control
 include-file = ~/.config/polybar/modules/temperature
