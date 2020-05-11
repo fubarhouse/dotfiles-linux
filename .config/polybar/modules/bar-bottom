@@ -1,4 +1,5 @@
 [bar/bar-bottom]
+monitor = ${env:MONITOR:}
 width = 100%
 height = 28
 bottom = true
