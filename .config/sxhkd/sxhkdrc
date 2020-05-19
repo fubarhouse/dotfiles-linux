@@ -108,3 +108,7 @@ XF86AudioNext
     playerctl -p headset next
 XF86AudioPrev
     playerctl -p headset previous
+
+# Flameshot
+alt + Print
+    flameshot gui
