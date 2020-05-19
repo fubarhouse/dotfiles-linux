@@ -1,5 +1,9 @@
 #! /bin/sh
 
+# Monitor workspaces
+bspc monitor HDMI-0 -d 1 2 3 4 5
+bspc monitor DVI-I-1 -d 6 7 8 9 10
+
 # Desknamer
 /usr/bin/desknamer &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
@@ -21,10 +25,6 @@ nm-applet &
 # Monitor configuration
 xrandr --output DVI-I-1 --mode 1680x1050 --right-of HDMI-0 --set underscan on
 xrandr --output HDMI-0 --mode 1680x1050 --left-of DVI-I-1 --primary
-
-# Monitor workspaces
-bspc monitor DVI-I-1 -d 1 2 3 4 5 6 7 8 9 10
-bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9
 
 # Config
 bspc config border_width                  2
