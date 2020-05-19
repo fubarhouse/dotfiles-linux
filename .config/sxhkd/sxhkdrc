@@ -26,9 +26,30 @@ XF86AudioMute
 XF86AudioMicMute
     pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-# Switch to workspace
+# Switch to workspace (Number buttons)
 alt + {1-9,0}
-      bspc desktop -f '^{1-9,10}'
+    bspc desktop -f '^{1-9,10}'
+# Switch to workspace (Keypad buttons)
+alt + shift + KP_1
+    bspc desktop -f '^1'
+alt + shift + KP_2
+    bspc desktop -f '^2'
+alt + shift + KP_3
+    bspc desktop -f '^3'
+alt + shift + KP_4
+    bspc desktop -f '^4'
+alt + shift + KP_5
+    bspc desktop -f '^5'
+alt + shift + KP_6
+    bspc desktop -f '^6'
+alt + shift + KP_7
+    bspc desktop -f '^7'
+alt + shift + KP_8
+    bspc desktop -f '^8'
+alt + shift + KP_9
+    bspc desktop -f '^9'
+alt + shift + KP_0
+    bspc desktop -f '^10'
 
 # Move focused container to workspace
 alt + shift + {1-9,0}
