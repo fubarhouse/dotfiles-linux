@@ -5,10 +5,14 @@ interval = 25
 mount-0 = /
 
 format-padding = 1
+format-underline = ${colors.foreground}
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %mountpoint%:%percentage_used%%
+label-mounted-foreground = ${colors.foreground}
+label-mounted-underline = ${colors.foreground}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground}
+label-unmounted-underline = ${colors.foreground}
 
 ; Separator in between workspaces
 ; label-separator = |

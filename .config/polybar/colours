@@ -2,8 +2,9 @@
 
 background = ${xrdb:color0:color0}
 foreground = ${xrdb:color5:color5}
-active = {active}
-inactive = {inactive}
+foreground-alt = ${xrdb:color7:color7}
+active = ${xrdb:color1:color1}
+inactive = ${xrdb:color3:color3}
 highlight = ${xrdb:color2:color2}
 error = ${xrdb:color9:color9}
 

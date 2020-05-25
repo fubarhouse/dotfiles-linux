@@ -9,3 +9,4 @@ click-middle = exec pulseaudio-eqalizer-gtk &
 scroll-up = ~/.config/polybar/scripts/polybar-pulseaudio-control/pulseaudio-control.bash up
 scroll-down = ~/.config/polybar/scripts/polybar-pulseaudio-control/pulseaudio-control.bash down
 label-foreground = ${colors.foreground}
+content-underline = ${colors.foreground}

@@ -6,10 +6,11 @@ format-padding = 1
 
 label-open = 
 label-open-foreground = ${colors.foreground}
-label-close =  Cancel
+label-close = X
 label-close-foreground = ${colors.foreground}
 label-separator = |
 label-separator-foreground = ${colors.foreground}
+format-label-underline = ${colors.foreground}
 
 menu-0-0 = Reboot
 menu-0-0-exec = menu-open-1

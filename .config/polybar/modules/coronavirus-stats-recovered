@@ -4,4 +4,5 @@ label =  %output%
 exec = /home/karl/go/bin/mycorona -l "Australian Capital Territory" -r
 interval = 900
 format-padding = 1
-format-underline = #33FF33
+format-foreground = ${colors.foreground}
+format-underline = ${colors.foreground}

@@ -5,7 +5,7 @@ warn-temperature = 60
 
 format = <ramp> <label>
 format-padding = 1
-format-underline = #f50a4d
+format-underline = ${colors.foreground}
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 

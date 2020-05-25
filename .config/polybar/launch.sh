@@ -10,4 +10,5 @@ if type "xrandr"; then
 else
     polybar bar-top     --reload  &
     polybar bar-bottom  --reload  &
+    pasystray                     &
 fi
