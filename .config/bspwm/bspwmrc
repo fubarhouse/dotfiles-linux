@@ -16,9 +16,9 @@ $HOME/.config/polybar/launch.sh &
 # Dunst
 dunst &
 # Feh
-feh --bg-scale /home/karl/Assets/169654.jpg
+feh --bg-scale /home/karl/Assets/Ak7xukD.jpg
 # Wal
-wal -i /home/karl/Assets/169654.jpg
+wal -i /home/karl/Assets/Ak7xukD.jpg
 # NetworkManager
 nm-applet &
 
