@@ -21,6 +21,8 @@ feh --bg-scale /home/karl/Assets/Ak7xukD.jpg
 wal -i /home/karl/Assets/Ak7xukD.jpg
 # NetworkManager
 nm-applet &
+# PulseAudio Systray
+pasystray &
 
 # Monitor configuration
 xrandr --output DVI-I-1 --mode 1680x1050 --right-of HDMI-0 --set underscan on
