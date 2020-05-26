@@ -24,6 +24,7 @@ include-file = ~/.config/polybar/modules/eth
 include-file = ~/.config/polybar/modules/filesystem
 include-file = ~/.config/polybar/modules/i3
 include-file = ~/.config/polybar/modules/ipinfo
+include-file = ~/.config/polybar/modules/lifeline
 include-file = ~/.config/polybar/modules/memory
 include-file = ~/.config/polybar/modules/playerctl
 include-file = ~/.config/polybar/modules/powermenu

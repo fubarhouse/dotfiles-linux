@@ -61,7 +61,7 @@ alt + shift + l
 
 # Applications....
 alt + d
-	rofi -show run
+	rofi -show drun
 alt + Tab
 	rofi -show window
 alt + Return

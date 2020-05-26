@@ -20,7 +20,7 @@ font-4 = "GLYPHICONS Basic Set:style=Regular:size=9;2"
 
 modules-left = bspwm
 modules-center = playerctl
-modules-right = filesystem temperature memory cpu date bamboo powermenu
+modules-right = filesystem temperature memory cpu date bamboo console keys powermenu
 
 tray-background = ${colors.highlight}
 tray-position = right
