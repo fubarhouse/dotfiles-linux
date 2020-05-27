@@ -16,9 +16,7 @@ $HOME/.config/polybar/launch.sh &
 # Dunst
 dunst &
 # Wal
-wal -i /home/karl/Assets/Ak7xukD.jpg
-# Feh
-feh --bg-fill /home/karl/Assets/Ak7xukD.jpg
+wal -i $(find $HOME/Assets/wallpapers/ -type file | shuf -n 1) &
 # NetworkManager
 nm-applet &
 # PulseAudio Systray

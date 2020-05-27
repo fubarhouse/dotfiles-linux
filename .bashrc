@@ -1,5 +1,10 @@
 #!/usr/bin/bash
 
+function nwp() {
+  RANDOMWALLPAPER=$(find $HOME/Assets/wallpapers/ -type f | shuf -n 1);
+  wal -i ${RANDOMWALLPAPER};
+}
+
 # async apply to terminal emulator
 (cat ~/.cache/wal/sequences &);
 # synchronous alternative
