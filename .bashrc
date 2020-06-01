@@ -1,8 +1,9 @@
 #!/usr/bin/bash
 
 function nwp() {
-  RANDOMWALLPAPER=$(find $HOME/Assets/wallpapers/ -type f | shuf -n 1);
+  export RANDOMWALLPAPER=$(find $HOME/Assets/wallpapers/ -type f | shuf -n 7 | shuf -n 1);
   wal -i ${RANDOMWALLPAPER};
+  wal_steam -w;
 }
 
 # async apply to terminal emulator
