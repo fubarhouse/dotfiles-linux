@@ -1,8 +1,9 @@
 #!/usr/bin/bash
 
 function nwp() {
-  export RANDOMWALLPAPER=$(find $HOME/Assets/wallpapers/ -type f | shuf -n 7 | shuf -n 1);
-  wal -i ${RANDOMWALLPAPER};
+  #export RANDOMWALLPAPER=$(find $HOME/Assets/wallpapers/ -type f | shuf -n 7 | shuf -n 1);
+  #wal -i ${RANDOMWALLPAPER};
+  wpg -m
   wal_steam -w;
 }
 
