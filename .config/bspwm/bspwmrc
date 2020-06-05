@@ -10,7 +10,7 @@ bspc monitor DVI-I-1 -d 6 7 8 9 10
 # SXHKD
 sxhkd &
 # Compton
-compton --backend xrender --blur-background --blur-strength 8 &
+compton --backend xrender --blur-background --blur-strength 4 &
 # Polybar
 $HOME/.config/polybar/launch.sh &
 # Dunst
@@ -43,7 +43,7 @@ bspc config focus_follows_pointer         true
 bspc config history_aware_focus           true
 bspc config remove_disabled_monitors      true
 bspc config merge_overlapping_monitors    true
-bspc config pointer_modifier mod4
+bspc config pointer_modifier mod1
 bspc config pointer_action1 move
 bspc config pointer_action2 resize_side
 bspc config pointer_action3 resize_corner

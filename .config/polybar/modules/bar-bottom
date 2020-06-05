@@ -9,8 +9,8 @@ line-size = 0
 padding-left = 2
 wm-restack = bspwm
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = ${colors.background-alt}
+foreground = ${colors.foreground-alt}
 
 font-0 = "FiraCode Nerd Font:style=Regular:size=9;1"
 font-1 = "FiraCode Nerd Font Mono:style=Bold"

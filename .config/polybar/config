@@ -1,5 +1,12 @@
-; Include Colour Scheme
-include-file = ~/.config/polybar/colours
+[colors]
+background = ${xrdb:color1:#5F5C9E}
+background-alt = ${xrdb:color2:#125F99}
+foreground = ${xrdb:color15:#f4f5ff}
+foreground-alt = ${xrdb:color14:#42dfff}
+active = #2e46c7
+inactive = #203088
+highlight = ${xrdb:color2:#125F99}
+error = ${xrdb:color9:#6c67dd}
 
 ; Private
 include-file = ~/.config/polybar/modules/bamboo
