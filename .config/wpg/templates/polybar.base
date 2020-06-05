@@ -1,0 +1,48 @@
+[colors]
+background = ${{xrdb:color1:{color1}}}
+background-alt = ${{xrdb:color2:{color2}}}
+foreground = ${{xrdb:color15:{color15}}}
+foreground-alt = ${{xrdb:color14:{color14}}}
+active = {active}
+inactive = {inactive}
+highlight = ${{xrdb:color2:{color2}}}
+error = ${{xrdb:color9:{color9}}}
+
+; Private
+include-file = ~/.config/polybar/modules/bamboo
+
+; Include Bars
+include-file = ~/.config/polybar/modules/bar-bottom
+include-file = ~/.config/polybar/modules/bar-top
+
+; Include Coronavirus modules
+include-file = ~/.config/polybar/modules/coronavirus-button
+include-file = ~/.config/polybar/modules/coronavirus-stats-active
+include-file = ~/.config/polybar/modules/coronavirus-stats-confirmed
+include-file = ~/.config/polybar/modules/coronavirus-stats-dead
+include-file = ~/.config/polybar/modules/coronavirus-stats-recovered
+
+; Include all other modules
+include-file = ~/.config/polybar/modules/audio
+include-file = ~/.config/polybar/modules/bspwm
+include-file = ~/.config/polybar/modules/cpu
+include-file = ~/.config/polybar/modules/date
+include-file = ~/.config/polybar/modules/eth
+include-file = ~/.config/polybar/modules/filesystem
+include-file = ~/.config/polybar/modules/i3
+include-file = ~/.config/polybar/modules/ipinfo
+include-file = ~/.config/polybar/modules/lifeline
+include-file = ~/.config/polybar/modules/memory
+include-file = ~/.config/polybar/modules/playerctl
+include-file = ~/.config/polybar/modules/powermenu
+include-file = ~/.config/polybar/modules/pulseaudio-control
+include-file = ~/.config/polybar/modules/temperature
+include-file = ~/.config/polybar/modules/wlan
+include-file = ~/.config/polybar/modules/xwindow
+
+[settings]
+format-module-padding = 1
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
