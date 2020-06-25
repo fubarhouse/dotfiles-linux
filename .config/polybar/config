@@ -45,7 +45,7 @@ include-file = ~/.config/polybar/modules/wlan
 include-file = ~/.config/polybar/modules/xwindow
 
 [settings]
-format-module-padding = 0
+format-module-padding = 1
 screenchange-reload = true
 
 [global/wm]

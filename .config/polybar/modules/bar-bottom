@@ -14,8 +14,8 @@ foreground = ${colors.transparent}
 
 include-file = ~/.config/polybar/fonts
 
-modules-left = margin round-left ipinfo margin round-right 
-modules-center = margin round-left coronavirus coronavirus-stats-confirmed coronavirus-stats-recovered coronavirus-stats-active coronavirus-stats-dead round-right
+modules-left = margin round-left ipinfo round-right margin
+modules-center = margin round-left coronavirus coronavirus-stats-confirmed coronavirus-stats-recovered coronavirus-stats-active coronavirus-stats-dead round-right margin
 modules-right = margin round-left wlan round-right margin
 
 tray-background = ${colors.background}

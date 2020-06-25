@@ -1,6 +1,6 @@
 [module/coronavirus-stats-dead]
 type = custom/script
-label =  %output%
+label = %{T7}ﮙ%{T-} %output%
 exec = /home/karl/go/bin/mycorona -l "Australian Capital Territory" -d
 interval = 900
 format-padding = 1
