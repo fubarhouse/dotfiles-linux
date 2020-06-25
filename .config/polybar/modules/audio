@@ -2,6 +2,7 @@
 type = custom/text
 content = 
 content-padding = 1
+content-background = ${colors.background}
 
 click-right = exec pavucontrol &
 click-left = ~/.config/polybar/scripts/polybar-pulseaudio-control/pulseaudio-control.bash togmute

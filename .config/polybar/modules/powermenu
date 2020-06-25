@@ -1,15 +1,17 @@
 [module/powermenu]
 type = custom/menu
+expand-right = false
 
 format-spacing = 1
 format-padding = 1
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
 
-label-open = 
+label-open = " "
 label-open-foreground = ${colors.foreground}
 label-close = X
 label-close-foreground = ${colors.foreground}
 label-separator = |
-label-separator-foreground = ${colors.foreground}
 format-label-underline = ${colors.foreground}
 
 menu-0-0 = Reboot

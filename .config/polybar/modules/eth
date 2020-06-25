@@ -1,8 +1,9 @@
 [module/eth]
 type = internal/network
-interface = enp0s25
+interface = enp39s0
 interval = 3.0
 format-padding = 1
+format-background = ${colors.background}
 
 label-connected = %local_ip%
 format-connected-underline = ${colors.active}

@@ -4,13 +4,17 @@ interval = 25
 
 mount-0 = /
 
-format-padding = 1
+format-padding = 2
+
 format-underline = ${colors.foreground}
 
-label-mounted = %mountpoint%:%percentage_used%%
+label-mounted =  %percentage_used%%
+;label-mounted = %mountpoint%:%percentage_used%%
+label-mounted-background = ${colors.background}
 label-mounted-foreground = ${colors.foreground}
 label-mounted-underline = ${colors.foreground}
 label-unmounted = %mountpoint% not mounted
+label-unmounted-background = ${colors.background}
 label-unmounted-foreground = ${colors.foreground}
 label-unmounted-underline = ${colors.foreground}
 

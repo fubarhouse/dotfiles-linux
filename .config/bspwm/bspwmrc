@@ -10,7 +10,7 @@ bspc monitor DVI-I-1 -d 6 7 8 9 10
 # SXHKD
 sxhkd &
 # Compton
-compton --backend xrender --blur-background --blur-strength 4 &
+compton --backend xrender --blur-background --blur-strength 4 --config ~/.config/compton.conf --vsync opengl-swc &
 # Polybar
 $HOME/.config/polybar/launch.sh &
 # Dunst

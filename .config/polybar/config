@@ -1,12 +1,13 @@
 [colors]
-background = ${xrdb:color1:#5F5C9E}
-background-alt = ${xrdb:color2:#125F99}
-foreground = ${xrdb:color15:#f4f5ff}
-foreground-alt = ${xrdb:color14:#42dfff}
-active = #2e46c7
-inactive = #203088
-highlight = ${xrdb:color2:#125F99}
-error = ${xrdb:color9:#6c67dd}
+background = ${xrdb:color1:#B85864}
+background-alt = ${xrdb:color2:#4D9CBE}
+foreground = ${xrdb:color15:#fffff3}
+foreground-alt = ${xrdb:color14:#d584ce}
+transparent = #00ffffff
+active = #41a7cb
+inactive = #2d728c
+highlight = ${xrdb:color2:#4D9CBE}
+error = ${xrdb:color9:#ff6074}
 
 ; Private
 include-file = ~/.config/polybar/modules/bamboo
@@ -32,16 +33,20 @@ include-file = ~/.config/polybar/modules/filesystem
 include-file = ~/.config/polybar/modules/i3
 include-file = ~/.config/polybar/modules/ipinfo
 include-file = ~/.config/polybar/modules/lifeline
+include-file = ~/.config/polybar/modules/margin
 include-file = ~/.config/polybar/modules/memory
 include-file = ~/.config/polybar/modules/playerctl
 include-file = ~/.config/polybar/modules/powermenu
 include-file = ~/.config/polybar/modules/pulseaudio-control
+include-file = ~/.config/polybar/modules/round-left
+include-file = ~/.config/polybar/modules/round-right
 include-file = ~/.config/polybar/modules/temperature
 include-file = ~/.config/polybar/modules/wlan
 include-file = ~/.config/polybar/modules/xwindow
 
 [settings]
-format-module-padding = 1
+format-module-padding = 0
+screenchange-reload = true
 
 [global/wm]
 margin-top = 0

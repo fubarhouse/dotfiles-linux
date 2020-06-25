@@ -1,6 +1,6 @@
 [module/wlan]
 type = internal/network
-interface = enp0s25
+interface = enp39s0
 interval = 1.0
 
 ramp-signal-0 = 😱
@@ -22,19 +22,16 @@ format-connected = <ramp-signal> <label-connected>
 format-disconnected = <label-disconnected>
 format-packetloss = <animation-packetloss> <label-connected>
 
-
-label-connected-padding = 1
+label-padding = 2
+label-connected-background = ${colors.background}
 label-connected-foreground = ${colors.foreground}
 label-connected-prefix-foreground = ${active}
 ;label-connected-foreground = ${active}
-label-connected = "  %downspeed% %upspeed%"
+label-connected = " %downspeed% %upspeed%"
 ;label-connected-foreground = ${active}
 
-format-padding = 1
 ;format-connected-prefix = %{T3}直%{T-}
 
-
-format-disconnected-padding = 1
 format-label-disconnected-foreground = ${inactive}
 ;format-disconnected-prefix = %{T3}睊%{T-}
 ;label-disconnected = %{T3}睊%{T-}

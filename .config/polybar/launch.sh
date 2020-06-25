@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-killall -q polybar
+# killall polybar
 wal -R
 wal_steam -g
 

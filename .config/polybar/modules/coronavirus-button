@@ -2,6 +2,7 @@
 type = custom/text
 content =  
 content-padding = 1
+content-background = ${colors.background}
 content-foreground = ${colors.foreground}
 content-underline = ${colors.foreground}
 format-padding = 1

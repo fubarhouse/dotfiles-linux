@@ -1,30 +1,22 @@
 [bar/bar-top]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 28
+height = 30
 bottom = false
+offset-y = 5
 fixed-center = false
 enable-ipc = true
 line-size = 0
-padding-left = 2
 wm-restack = bspwm
 
-background = ${colors.background-alt}
-foreground = ${colors.foreground-alt}
+background = ${colors.transparent}
+foreground = ${colors.transparent}
 
-font-0 = "FiraCode Nerd Font:style=Regular:size=9;1"
-font-1 = "FiraCode Nerd Font Mono:style=Bold"
-font-2 = "FontAwesome:style=Regular:size=9;2"
-font-3 = "FiraMono Nerd Font:style=Regular:size=9:1"
-font-4 = "GLYPHICONS Basic Set:style=Regular:size=9;2"
+include-file = ~/.config/polybar/fonts
 
-modules-left = bspwm
-modules-center = playerctl
-modules-right = filesystem temperature memory cpu date bamboo console keys bar-reload powermenu
-
-tray-background = ${colors.highlight}
-tray-position = right
-tray-maxsize = 16
+modules-left = margin round-left bspwm round-right margin
+;modules-center = margin round-left playerctl round-right
+modules-right = margin round-left filesystem temperature memory cpu date bamboo console keys bar-reload powermenu round-right margin
 
 cursor-click = pointer
 cursor-scroll = ns-resize

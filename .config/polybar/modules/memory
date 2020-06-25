@@ -1,9 +1,8 @@
 [module/memory]
 type = internal/memory
 interval = 2
-format-padding = 1
-format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
 format-underline= ${colors.foreground}
-label = %percentage_used%%
+label =  %percentage_used%%
+label-background = ${colors.background}
 label-foreground = ${colors.foreground}

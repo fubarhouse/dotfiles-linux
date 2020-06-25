@@ -5,17 +5,21 @@ index-sort = true
 wrapping-scroll = false
 
 label-focused = %name%
+label-focused-background = ${colors.background}
 label-focused-foreground = ${colors.foreground}
 label-focused-padding = 1
 
 label-unfocused = %name%
+label-unfocused-background = ${colors.background}
 label-unfocused-foreground = ${colors.foreground}
 label-unfocused-padding = 1
 
 label-visible = %name%
+label-visible-background = ${colors.background}
 label-visible-foreground = ${self.label-focused-foreground}
 label-visible-padding = ${self.label-focused-padding}
 
 label-urgent = %name%
+label-urgent-background = ${colors.background}
 label-urgent-foreground = ${colors.danger}
 label-urgent-padding = ${self.label-focused-padding}

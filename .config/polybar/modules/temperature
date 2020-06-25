@@ -1,19 +1,21 @@
 [module/temperature]
 type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
+hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon0/temp1_input
+warn-temperature = 70
 
 format = <ramp> <label>
-format-padding = 1
-format-underline = ${colors.foreground}
+format-background = ${colors.background}
+format-padding = 2
 format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
+format-warn-padding = 1
+label = %temperature-c%
+label-foreground = ${colors.foreground}
+label-warn = %temperature-c%
+label-warn-foreground = ${colors.foreground}
 
-label = " %temperature-c%"
-label-warn = " %temperature-c%"
-label-warn-foreground = ${colors.highlight}
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground}
+ramp-0 = %{T3}%{T-}
+ramp-1 = %{T3}%{T-}
+ramp-2 = %{T3}%{T-}
+ramp-0-foreground = ${colors.foreground}
+ramp-1-foreground = ${colors.foreground}
+ramp-2-foreground = ${colors.foreground}
