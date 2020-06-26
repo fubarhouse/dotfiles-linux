@@ -1,0 +1,7 @@
+
+[module/round-left]
+type = custom/text
+
+content = %{T7}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.transparent}

@@ -1,0 +1,47 @@
+[module/bspwm]
+type = internal/bspwm
+
+format-background = ${colors.background}
+
+pin-workspaces = true
+inline-mode = true
+enable-click = true
+enable-scroll = false
+reverse-scroll = false
+fuzzy-match = true
+
+label-monitor = %name%
+format-padding = 0
+index-sort = true
+wrapping-scroll = false
+
+;label-separator = ""
+;label-padding = 0
+;label-separator-padding = 0
+
+label-empty = %name%
+label-empty-foreground = ${colors.foreground}
+
+label-occupied = %name%
+label-occupied-padding = 1
+label-occupied-foreground = ${colors.foreground}
+
+label-dimmed = %name%
+label-dimmed-padding = 1
+label-dimmed-foreground = ${colors.foreground}
+
+label-focused = %name%
+label-focused-padding = 1
+label-focused-foreground = ${colors.foreground-alt}
+
+label-unfocused = %name%
+label-unfocused-padding = 1
+label-unfocused-foreground = ${colors.foreground}
+
+label-visible = %name%
+label-visible-padding = 1
+label-visible-foreground = ${colors.foreground}
+
+label-urgent = %name%
+label-urgent-padding = 1
+label-urgent-foreground = ${colors.inactive}

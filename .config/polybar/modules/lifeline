@@ -1,0 +1,26 @@
+[module/console]
+type = custom/text
+content = 
+content-padding = 1
+content-background = ${colors.background}
+content-foreground = ${colors.foreground}
+content-underline = ${colors.foreground}
+click-left = /usr/bin/termite & > /dev/null;
+
+[module/keys]
+type = custom/text
+content = 
+content-padding = 1
+content-background = ${colors.background}
+content-foreground = ${colors.foreground}
+content-underline = ${colors.foreground}
+click-left = /usr/bin/sxhkd & > /dev/null;
+
+[module/bar-reload]
+type = custom/text
+content = 勒
+content-padding = 1
+content-background = ${colors.background}
+content-foreground = ${colors.foreground}
+content-underline = ${colors.foreground}
+click-left = /home/karl/.config/polybar/launch.sh & > /dev/null;
