@@ -36,6 +36,7 @@ include-file = ~/.config/polybar/modules/lifeline
 include-file = ~/.config/polybar/modules/margin
 include-file = ~/.config/polybar/modules/memory
 include-file = ~/.config/polybar/modules/playerctl
+include-file = ~/.config/polybar/modules/protonmail
 include-file = ~/.config/polybar/modules/powermenu
 include-file = ~/.config/polybar/modules/pulseaudio-control
 include-file = ~/.config/polybar/modules/round-left

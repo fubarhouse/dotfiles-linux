@@ -1,0 +1,9 @@
+[module/protonmail]
+type = custom/script
+exec = ~/.config/polybar/bar-protonmail/bar_protonmail.py -p
+interval = 10
+click-left = xdg-open https://mail.protonmail.com/inbox
+
+format-padding = 1
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
