@@ -18,3 +18,6 @@ source ~/.cache/wal/colors-tty.sh;
 # $PATH
 export PATH="${PATH}:${HOME}/.local/bin/";
 export PATH="${PATH}:${HOME}/.local/share/applications/";
+
+# Proton
+export STEAM_COMPAT_DATA_PATH=$HOME/proton

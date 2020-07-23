@@ -8,7 +8,7 @@ format-padding = 2
 
 format-underline = ${colors.foreground}
 
-label-mounted =  %percentage_used%%
+label-mounted =  %percentage_used%% (%used%/%total%)
 ;label-mounted = %mountpoint%:%percentage_used%%
 label-mounted-background = ${colors.background}
 label-mounted-foreground = ${colors.foreground}

@@ -16,7 +16,7 @@ $HOME/.config/polybar/launch.sh &
 # Dunst
 dunst &
 # Wal
-wal -i $(find $HOME/Assets/wallpapers/ -type file | shuf -n 1) &
+# wal -i $(find $HOME/Assets/wallpapers/ -type file | shuf -n 1) &
 # NetworkManager
 nm-applet &
 # PulseAudio Systray
@@ -58,7 +58,5 @@ bspc config urgent_border_color 	      "#dd2727"
 
 # Rules
 bspc rule -a "GitAhead" state=floating
-bspc rule -a "Slack" state=floating
-bspc rule -a "Steam" state=floating
 bspc rule -a "Microsoft Teams Notification" state=floating
 bash /home/karl/.config/bspwm/bspwm_colors.sh &
