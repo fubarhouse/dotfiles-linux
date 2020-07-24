@@ -13,6 +13,8 @@ sxhkd &
 compton --backend xrender --blur-background --blur-strength 4 --config ~/.config/compton.conf --vsync opengl-swc &
 # Polybar
 $HOME/.config/polybar/launch.sh &
+# BirdTray
+birdtray &
 # Dunst
 dunst &
 # Wal

@@ -5,6 +5,7 @@ function nwp() {
   #wal -i ${RANDOMWALLPAPER};
   wpg -m
   wal_steam -w;
+  pywalfox update;
 }
 
 # async apply to terminal emulator
