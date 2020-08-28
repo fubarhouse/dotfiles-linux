@@ -11,4 +11,4 @@ time-alt = "%H:%M:%S"
 format-underline = ${colors.foreground}
 label-background = ${colors.background}
 label-foreground = ${colors.foreground}
-label =  %date% %time%
+label =  %time%
