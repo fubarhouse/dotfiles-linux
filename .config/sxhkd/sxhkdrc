@@ -81,9 +81,7 @@ alt + space
 alt + shift + r
     polybar-msg cmd restart
 
-# Move a floating window
-#alt + shift + {Left,Down,Up,Right}
-#    bspc node -v {-20 0,0 20,0 -20,20 0}
+# Move a floating windowUp
 
 # focus the next/previous node
 #alt + {Up,Down}
