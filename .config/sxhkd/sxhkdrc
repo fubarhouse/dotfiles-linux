@@ -17,6 +17,11 @@ alt + shift + q
 	bspc node -c
 
 # Volume Controls
+
+alt + KP_Add
+    pactl set-sink-volume @DEFAULT_SINK@ +1%
+alt + KP_Subtract
+    pactl set-sink-volume @DEFAULT_SINK@ -1%
 XF86AudioRaiseVolume
     pactl set-sink-volume @DEFAULT_SINK@ +2%
 XF86AudioLowerVolume
@@ -87,7 +92,7 @@ alt + shift + r
 #alt + {Up,Down}
 #	bspc node -f {prev,next}.local.!above
 alt + {Up,Down,Left,Right}
-	$HOME/bin/focusmover {north,south,west,east}
+	/home/karl/.config/sxhkd/focusmover {north,south,west,east}
 
 # Different style of movement: transplant into window in chosen direction
 alt + shift + {Left,Down,Up,Right}
@@ -108,24 +113,22 @@ XF86AudioNext
 XF86AudioPrev
     playerctl -p headset previous
 
+#XF86Tools
+#XF86Launch5
+
 # Flameshot
 alt + Print
     flameshot gui
 
 # Move floating window.
-super + shift + {Left,h,Down,j,Up,k,Right,l}
+alt + shift + {Left,Down,Up,Right}
 	if capsenabled; then step=100; else step=20; fi; \
 	[ -z "$(bspc query -N -n focused.tiled)" ] && {\
 		bspc node -s west  || bspc node -v -$step 0, \
-		bspc node -s west  || bspc node -v -$step 0, \
-		bspc node -s south || bspc node -v 0 $step,  \
 		bspc node -s south || bspc node -v 0 $step,  \
 		bspc node -s north || bspc node -v 0 -$step, \
-		bspc node -s north || bspc node -v 0 -$step, \
-		bspc node -s east  || bspc node -v $step  0, \
 		bspc node -s east  || bspc node -v $step  0  \
 	}
-
 
 # start move/resize
 alt + button{1-3}

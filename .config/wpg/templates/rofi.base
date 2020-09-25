@@ -1,15 +1,15 @@
 rofi.modi:                           window,run,ssh
 rofi.width:                          50
-rofi.lines:                          15
+rofi.lines:                          10
 rofi.columns:                        1
-rofi.font:                           roboto mono 10
+rofi.font:                           jetbrainsmono nerd font mono 10
 rofi.color-normal:                   {color0}, {color15}, {color0}, {active}, {color15}
 rofi.color-urgent:                   {color0}, #d6b48d, #22231D, #d6b48d, {color15}
 rofi.color-active:                   {color0}, {color14}, {color0}, {color14}, {color0}
 rofi.color-window:                   {color0}, {active}, {inactive}
-rofi.bw:                             5
+rofi.bw:                             1
 rofi.location:                       0
-rofi.padding:                        5
+rofi.padding:                        1
 rofi.yoffset:                        0
 rofi.xoffset:                        0
 rofi.fixed-num-lines:                true
